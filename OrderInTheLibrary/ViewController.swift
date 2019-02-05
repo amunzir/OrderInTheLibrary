@@ -7,8 +7,14 @@
 //
 
 import UIKit
+var firstName = "jjj"
+var lastName = "hoh"
+
 
 class ViewController: UIViewController {
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="13.489208633093526" y="20.863309352517987"/>
         </scene>
-        <!--View Controller-->
+        <!--Player InfoVC-->
         <scene sceneID="oDy-fu-wWi">
             <objects>
-                <viewController id="iL6-B1-GaL" sceneMemberID="viewController">
+                <viewController id="iL6-B1-GaL" customClass="PlayerInfoVC" customModule="OrderInTheLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PDy-Wi-9Xr">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PLAY - Things that need to be done: - text fields for first + last names - choose avatar? - back button" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jme-KP-buO">
-                                <rect key="frame" x="350" y="290" width="413" height="254"/>
+                                <rect key="frame" x="38" y="538" width="413" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -93,19 +93,51 @@
                                     <segue destination="er9-o8-mqi" kind="show" id="y4B-hm-Pae"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="[Ex: Brian]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYe-SG-BZx">
+                                <rect key="frame" x="92" y="181" width="400" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i2-FF-NRg">
+                                <rect key="frame" x="92" y="101" width="289" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGh-Wr-uki">
+                                <rect key="frame" x="621" y="101" width="288" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="[Ex: Smith]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70T-HH-qEy">
+                                <rect key="frame" x="621" y="181" width="400" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mHZ-PE-FrS"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNameTF" destination="FYe-SG-BZx" id="fSQ-cP-cYR"/>
+                        <outlet property="lastNameTF" destination="70T-HH-qEy" id="lCs-8g-Vtm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeG-zN-fbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824" y="-695"/>
+            <point key="canvasLocation" x="823.92086330935251" y="-695.68345323741016"/>
         </scene>
-        <!--View Controller-->
+        <!--Level SelectVC-->
         <scene sceneID="V0A-Gp-V0S">
             <objects>
-                <viewController id="er9-o8-mqi" sceneMemberID="viewController">
+                <viewController id="er9-o8-mqi" customClass="LevelSelectVC" customModule="OrderInTheLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ZC-Yz-7uX">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="1629" y="-696"/>
         </scene>
-        <!--View Controller-->
+        <!--TutorialVC-->
         <scene sceneID="BeU-Ej-awf">
             <objects>
-                <viewController id="z3I-ho-TMC" sceneMemberID="viewController">
+                <viewController id="z3I-ho-TMC" customClass="TutorialVC" customModule="OrderInTheLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nsX-sv-5jj">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,10 +265,10 @@
             </objects>
             <point key="canvasLocation" x="823.92086330935251" y="735.97122302158277"/>
         </scene>
-        <!--View Controller-->
+        <!--SortingVC-->
         <scene sceneID="NBa-ou-ORv">
             <objects>
-                <viewController id="tRX-wM-4ET" sceneMemberID="viewController">
+                <viewController id="tRX-wM-4ET" customClass="SortingVC" customModule="OrderInTheLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lwn-ep-s3T">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="2436" y="-696"/>
         </scene>
-        <!--View Controller-->
+        <!--ShelvingVC-->
         <scene sceneID="H88-bH-Iux">
             <objects>
-                <viewController id="IfG-fx-fgW" sceneMemberID="viewController">
+                <viewController id="IfG-fx-fgW" customClass="ShelvingVC" customModule="OrderInTheLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tj6-vs-LHH">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="2436" y="21"/>
         </scene>
-        <!--View Controller-->
+        <!--ReorderingVC-->
         <scene sceneID="5Qt-6y-qhk">
             <objects>
-                <viewController id="zRk-PJ-MF8" sceneMemberID="viewController">
+                <viewController id="zRk-PJ-MF8" customClass="ReorderingVC" customModule="OrderInTheLibrary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XdA-60-IDv">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,6 +354,6 @@
         <image name="lightBlue" width="120" height="89.599998474121094"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AZC-jp-pNX"/>
+        <segue reference="tKY-za-IyX"/>
     </inferredMetricsTieBreakers>
 </document>

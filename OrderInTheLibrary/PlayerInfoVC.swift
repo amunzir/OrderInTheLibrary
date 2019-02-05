@@ -10,9 +10,12 @@ import UIKit
 
 class PlayerInfoVC: UIViewController {
 
+    @IBOutlet weak var firstNameTF: UITextField!
+    @IBOutlet weak var lastNameTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        firstNameTF.text = firstName + " "
         // Do any additional setup after loading the view.
     }
     
