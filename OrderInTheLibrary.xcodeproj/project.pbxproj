@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C19464062209FF8900A818F3 /* PlayerInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19464052209FF8900A818F3 /* PlayerInfoVC.swift */; };
+		C19464082209FFBD00A818F3 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19464072209FFBD00A818F3 /* TutorialVC.swift */; };
+		C194640A2209FFF400A818F3 /* LevelSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19464092209FFF400A818F3 /* LevelSelectVC.swift */; };
+		C194640C220A001B00A818F3 /* SortingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C194640B220A001B00A818F3 /* SortingVC.swift */; };
+		C194640E220A003200A818F3 /* ShelvingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C194640D220A003200A818F3 /* ShelvingVC.swift */; };
+		C1946410220A004400A818F3 /* ReorderingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C194640F220A004400A818F3 /* ReorderingVC.swift */; };
 		C1E3ACB92200CE07004D9369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3ACB82200CE07004D9369 /* AppDelegate.swift */; };
 		C1E3ACBB2200CE07004D9369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3ACBA2200CE07004D9369 /* ViewController.swift */; };
 		C1E3ACBE2200CE07004D9369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E3ACBC2200CE07004D9369 /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C19464052209FF8900A818F3 /* PlayerInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoVC.swift; sourceTree = "<group>"; };
+		C19464072209FFBD00A818F3 /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		C19464092209FFF400A818F3 /* LevelSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectVC.swift; sourceTree = "<group>"; };
+		C194640B220A001B00A818F3 /* SortingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingVC.swift; sourceTree = "<group>"; };
+		C194640D220A003200A818F3 /* ShelvingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelvingVC.swift; sourceTree = "<group>"; };
+		C194640F220A004400A818F3 /* ReorderingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderingVC.swift; sourceTree = "<group>"; };
 		C1E3ACB52200CE07004D9369 /* OrderInTheLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderInTheLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E3ACB82200CE07004D9369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1E3ACBA2200CE07004D9369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +68,12 @@
 			children = (
 				C1E3ACB82200CE07004D9369 /* AppDelegate.swift */,
 				C1E3ACBA2200CE07004D9369 /* ViewController.swift */,
+				C19464072209FFBD00A818F3 /* TutorialVC.swift */,
+				C19464052209FF8900A818F3 /* PlayerInfoVC.swift */,
+				C19464092209FFF400A818F3 /* LevelSelectVC.swift */,
+				C194640B220A001B00A818F3 /* SortingVC.swift */,
+				C194640D220A003200A818F3 /* ShelvingVC.swift */,
+				C194640F220A004400A818F3 /* ReorderingVC.swift */,
 				C1E3ACBC2200CE07004D9369 /* Main.storyboard */,
 				C1E3ACBF2200CE0D004D9369 /* Assets.xcassets */,
 				C1E3ACC12200CE0D004D9369 /* LaunchScreen.storyboard */,
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C194640E220A003200A818F3 /* ShelvingVC.swift in Sources */,
+				C19464082209FFBD00A818F3 /* TutorialVC.swift in Sources */,
 				C1E3ACBB2200CE07004D9369 /* ViewController.swift in Sources */,
 				C1E3ACB92200CE07004D9369 /* AppDelegate.swift in Sources */,
+				C19464062209FF8900A818F3 /* PlayerInfoVC.swift in Sources */,
+				C194640A2209FFF400A818F3 /* LevelSelectVC.swift in Sources */,
+				C194640C220A001B00A818F3 /* SortingVC.swift in Sources */,
+				C1946410220A004400A818F3 /* ReorderingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
