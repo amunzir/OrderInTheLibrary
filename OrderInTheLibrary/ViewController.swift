@@ -9,7 +9,18 @@
 import UIKit
 var firstName = "jjj"
 var lastName = "hoh"
-
+var currentLvl = 0
+var lvl1Done = false
+var lvl2Done = false
+var lvl3Done = false
+var lvl4Done = false
+var lvl5Done = false
+var lvl6Done = false
+var lvl7Done = false
+var lvl8Done = false
+var lvl9Done = false
+var lvl10Done = false
+var lvl11Done = false
 
 class ViewController: UIViewController {
     
