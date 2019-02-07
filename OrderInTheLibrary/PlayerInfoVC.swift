@@ -15,11 +15,32 @@ class PlayerInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstNameTF.text = firstName + " "
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func nextBtnPressed(_ sender: UIButton) {
+        if firstNameTF.text == ""
+        {
+            let alert = UIAlertController(title: "First name not given", message: "You need a name to verify that it's you.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if lastNameTF.text == ""
+        {
+            let alert = UIAlertController(title: "Last name not given", message: "You need a name to verify that it's you.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else
+        {
+            firstName = firstNameTF.text!
+            lastName = lastNameTF.text!
+            performSegue(withIdentifier: "lvlSelectSegue", sender: nil)
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 

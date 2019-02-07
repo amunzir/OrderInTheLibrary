@@ -90,7 +90,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
-                                    <segue destination="er9-o8-mqi" kind="show" id="y4B-hm-Pae"/>
+                                    <action selector="nextBtnPressed:" destination="iL6-B1-GaL" eventType="touchUpInside" id="Mhl-Ax-Fko"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="[Ex: Brian]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYe-SG-BZx">
@@ -128,6 +128,7 @@
                     <connections>
                         <outlet property="firstNameTF" destination="FYe-SG-BZx" id="fSQ-cP-cYR"/>
                         <outlet property="lastNameTF" destination="70T-HH-qEy" id="lCs-8g-Vtm"/>
+                        <segue destination="er9-o8-mqi" kind="show" identifier="lvlSelectSegue" id="7dF-DD-zuQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeG-zN-fbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
