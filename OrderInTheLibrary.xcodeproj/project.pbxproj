@@ -18,6 +18,7 @@
 		C1E3ACBE2200CE07004D9369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E3ACBC2200CE07004D9369 /* Main.storyboard */; };
 		C1E3ACC02200CE0D004D9369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E3ACBF2200CE0D004D9369 /* Assets.xcassets */; };
 		C1E3ACC32200CE0D004D9369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E3ACC12200CE0D004D9369 /* LaunchScreen.storyboard */; };
+		C1F6AA8C2211E800007F95CC /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6AA8B2211E800007F95CC /* BookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C1E3ACBF2200CE0D004D9369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E3ACC22200CE0D004D9369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E3ACC42200CE0D004D9369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F6AA8B2211E800007F95CC /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C1E3ACB82200CE07004D9369 /* AppDelegate.swift */,
+				C1F6AA8B2211E800007F95CC /* BookView.swift */,
 				C1E3ACBA2200CE07004D9369 /* ViewController.swift */,
 				C19464072209FFBD00A818F3 /* TutorialVC.swift */,
 				C19464052209FF8900A818F3 /* PlayerInfoVC.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F6AA8C2211E800007F95CC /* BookView.swift in Sources */,
 				C194640E220A003200A818F3 /* ShelvingVC.swift in Sources */,
 				C19464082209FFBD00A818F3 /* TutorialVC.swift in Sources */,
 				C1E3ACBB2200CE07004D9369 /* ViewController.swift in Sources */,
