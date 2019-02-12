@@ -2,7 +2,7 @@
 //  BookView.swift
 //  OrderInTheLibrary
 //
-//  Created by Aamina Munzir on 2/11/19.
+//  Created by Aamina Munzir on 2/12/19.
 //  Copyright © 2019 Aamina Munzir. All rights reserved.
 //
 
@@ -10,39 +10,28 @@ import UIKit
 
 class BookView: UIView {
 
-    var catagory = "999"
-    var author = "WOW"
+    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var bkgImageView: UIImageView!
+    @IBOutlet weak var catagoryLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
     
-    //initWithFrame to init view from code
-    override init(frame: CGRect)
-    {
+    
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        commonInIt()
     }
     
-    //initWithCode to init view from xib or storyboard
-    required init?(coder aDecoder: NSCoder)
-    {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupView()
+        commonInIt()
     }
     
-    //common func to init our view
-    private func setupView()
+    private func commonInIt()
     {
-        backgroundColor = .red
+        Bundle.main.loadNibNamed("BookView", owner: self, options: nil)
+        addSubview(contentView)
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
     
-    //how to make obj in code
-    //let view = BookView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-    
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

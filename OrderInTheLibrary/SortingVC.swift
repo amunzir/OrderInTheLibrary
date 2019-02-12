@@ -10,9 +10,15 @@ import UIKit
 
 class SortingVC: UIViewController {
 
+    @IBOutlet weak var userBook: BookView!
+    
+    //var userBook = BookViewCODE()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(makeBook(x: 0, y: 0, w: 300, h: 40, catagory: "999", author: "WOW"))
+        userBook.authorLabel.text = "WOW"
+        userBook.catagoryLabel.text = "999"
+        //view.addSubview(makeBook(x: 0, y: 0, w: 300, h: 40, catagory: "999", author: "WOW"))
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +33,7 @@ class SortingVC: UIViewController {
     }
     */
     
+    /*
     func makeBook(x: Int, y: Int, w: Int, h: Int, catagory: String, author: String) -> UIView
     {
         var catagoryLabel: UILabel = {
@@ -57,6 +64,6 @@ class SortingVC: UIViewController {
         }()
         return bookView
     }
-    
+    */
 
 }
