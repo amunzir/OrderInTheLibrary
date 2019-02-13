@@ -16,13 +16,33 @@ class SortingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userBook.authorLabel.text = "WOW"
-        userBook.catagoryLabel.text = "999"
+        newGame()
+        
         //view.addSubview(makeBook(x: 0, y: 0, w: 300, h: 40, catagory: "999", author: "WOW"))
         // Do any additional setup after loading the view.
     }
     
-
+    func newGame()
+    {
+        randomCatagory()
+        randomAuthor()
+        randomBookColor()
+    }
+    func randomCatagory()
+    {
+        /* Alex's random catagory algorithm */
+        userBook.catagoryLabel.text = "999"
+    }
+    func randomAuthor()
+    {
+        /* Alex's random author algorithm */
+        userBook.authorLabel.text = "WOW"
+    }
+    func randomBookColor()
+    {
+        /* Alex's random color algorithm? */
+        userBook.bkgImageView.image = UIImage(named: "blueBook")
+    }
     /*
     // MARK: - Navigation
 
