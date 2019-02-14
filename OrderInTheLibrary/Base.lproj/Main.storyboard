@@ -594,11 +594,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progressBar" translatesAutoresizingMaskIntoConstraints="NO" id="fsy-h3-EXM">
+                                <rect key="frame" x="57" y="698" width="610" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7ev-c6-Pj0">
+                                <rect key="frame" x="84" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mao-4N-wVG">
+                                <rect key="frame" x="140" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5so-QW-SbJ">
+                                <rect key="frame" x="195" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="QcD-Xv-Kcm">
+                                <rect key="frame" x="251" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-X9-P7G">
+                                <rect key="frame" x="307" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yuq-4h-EsW">
+                                <rect key="frame" x="362" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-mE-Iud">
+                                <rect key="frame" x="418" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-j2-qAZ">
+                                <rect key="frame" x="474" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-Vc-Gpv">
+                                <rect key="frame" x="530" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-Bt-0aI">
+                                <rect key="frame" x="586" y="711" width="56" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Ms-FU-LEG"/>
                     </view>
                     <connections>
+                        <outlet property="lvl10BookIcon" destination="E3F-Bt-0aI" id="IGA-jg-Oef"/>
+                        <outlet property="lvl1BookIcon" destination="7ev-c6-Pj0" id="Zfg-W7-lct"/>
+                        <outlet property="lvl2BookIcon" destination="mao-4N-wVG" id="HSW-jd-B4o"/>
+                        <outlet property="lvl3BookIcon" destination="5so-QW-SbJ" id="uIn-o4-Z8j"/>
+                        <outlet property="lvl4BookIcon" destination="QcD-Xv-Kcm" id="8oc-cJ-Y58"/>
+                        <outlet property="lvl5BookIcon" destination="JrT-X9-P7G" id="s1T-Uv-Vfr"/>
+                        <outlet property="lvl6BookIcon" destination="yuq-4h-EsW" id="P80-OV-KM1"/>
+                        <outlet property="lvl7BookIcon" destination="NVg-mE-Iud" id="97R-dW-UA9"/>
+                        <outlet property="lvl8BookIcon" destination="yOA-j2-qAZ" id="nBG-Q2-xVQ"/>
+                        <outlet property="lvl9BookIcon" destination="LHv-Vc-Gpv" id="2oQ-re-NRF"/>
                         <outlet property="userBook" destination="y14-fq-wt6" id="g8R-qk-eBG"/>
                     </connections>
                 </viewController>
@@ -664,7 +718,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookIcon" width="43.200000762939453" height="50.400001525878906"/>
         <image name="lightBlue" width="120" height="89.599998474121094"/>
+        <image name="progressBar" width="504" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tKY-za-IyX"/>

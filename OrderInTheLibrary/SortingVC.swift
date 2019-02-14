@@ -12,6 +12,16 @@ class SortingVC: UIViewController {
 
     @IBOutlet weak var userBook: BookView!
     
+    @IBOutlet weak var lvl1BookIcon: UIImageView!
+    @IBOutlet weak var lvl2BookIcon: UIImageView!
+    @IBOutlet weak var lvl3BookIcon: UIImageView!
+    @IBOutlet weak var lvl4BookIcon: UIImageView!
+    @IBOutlet weak var lvl5BookIcon: UIImageView!
+    @IBOutlet weak var lvl6BookIcon: UIImageView!
+    @IBOutlet weak var lvl7BookIcon: UIImageView!
+    @IBOutlet weak var lvl8BookIcon: UIImageView!
+    @IBOutlet weak var lvl9BookIcon: UIImageView!
+    @IBOutlet weak var lvl10BookIcon: UIImageView!
     //var userBook = BookViewCODE()
     
     override func viewDidLoad() {
