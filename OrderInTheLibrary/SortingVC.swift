@@ -10,6 +10,8 @@ import UIKit
 
 class SortingVC: UIViewController {
 
+    var progressInLvl = 0
+    
     @IBOutlet weak var userBook: BookView!
     
     @IBOutlet weak var lvl1BookIcon: UIImageView!
@@ -37,6 +39,7 @@ class SortingVC: UIViewController {
         randomCatagory()
         randomAuthor()
         randomBookColor()
+        //set book back to OG posotion if dragging
     }
     func randomCatagory()
     {
@@ -53,6 +56,55 @@ class SortingVC: UIViewController {
         /* Alex's random color algorithm? */
         userBook.bkgImageView.image = UIImage(named: "blueBook")
     }
+    
+    func updateProgressBar()
+    {
+        if progressInLvl == 1
+        {
+            lvl1BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 2
+        {
+            lvl2BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 3
+        {
+            lvl3BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 4
+        {
+            lvl4BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 5
+        {
+            lvl5BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 6
+        {
+            lvl6BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 7
+        {
+            lvl7BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 8
+        {
+            lvl8BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 9
+        {
+            lvl9BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else if progressInLvl == 10
+        {
+            lvl10BookIcon.image = UIImage(named: "bookIcon")
+        }
+        else
+        {
+            lvl1BookIcon.image = nil
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
