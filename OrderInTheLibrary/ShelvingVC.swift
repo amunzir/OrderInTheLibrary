@@ -10,6 +10,15 @@ import UIKit
 
 class ShelvingVC: UIViewController {
 
+    @IBOutlet weak var firstBookView: BookView!
+    @IBOutlet weak var secondBookView: BookView!
+    @IBOutlet weak var thirdBookView: BookView!
+    @IBOutlet weak var fourthBookView: BookView!
+    @IBOutlet weak var fifthBookView: BookView!
+    
+    @IBOutlet weak var userBookView: BookView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
