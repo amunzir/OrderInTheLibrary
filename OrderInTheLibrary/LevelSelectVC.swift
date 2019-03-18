@@ -33,9 +33,60 @@ class LevelSelectVC: UIViewController {
         shelvingView.isHidden = true
         reorderView.isHidden = true
         nameLabel.text = firstName + " " + lastName
+        checkLvlComp()
 
         // Do any additional setup after loading the view.
     }
+    
+    func checkLvlComp()
+    {
+        if lvl1Done
+        {
+            lvl1Image.image = UIImage(named: "ok")
+        }
+        if lvl2Done
+        {
+            lvl2Image.image = UIImage(named: "ok")
+        }
+        if lvl3Done
+        {
+            lvl3Image.image = UIImage(named: "ok")
+        }
+        if lvl4Done
+        {
+            lvl4Image.image = UIImage(named: "ok")
+        }
+        if lvl5Done
+        {
+            lvl5Image.image = UIImage(named: "ok")
+        }
+        if lvl6Done
+        {
+            lvl6Image.image = UIImage(named: "ok")
+        }
+        if lvl7Done
+        {
+            lvl7Image.image = UIImage(named: "ok")
+        }
+        if lvl8Done
+        {
+            lvl8Image.image = UIImage(named: "ok")
+        }
+        if lvl9Done
+        {
+            lvl9Image.image = UIImage(named: "ok")
+        }
+        if lvl10Done
+        {
+            lvl10Image.image = UIImage(named: "ok")
+        }
+        if lvl11Done
+        {
+            lvl11Image.image = UIImage(named: "ok")
+        }
+    }
+    
+    
     
     @IBAction func sortingBtnPressed(_ sender: UIButton) {
         currentLvl = 1
