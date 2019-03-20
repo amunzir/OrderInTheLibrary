@@ -14,6 +14,11 @@ class SortingVC: UIViewController {
     
     @IBOutlet weak var userBook: BookView!
     
+    @IBOutlet weak var bin1Label: UILabel!
+    @IBOutlet weak var bin2Label: UILabel!
+    @IBOutlet weak var bin3Label: UILabel!
+    @IBOutlet weak var bin4Label: UILabel!
+    
     @IBOutlet weak var lvl1BookIcon: UIImageView!
     @IBOutlet weak var lvl2BookIcon: UIImageView!
     @IBOutlet weak var lvl3BookIcon: UIImageView!
@@ -26,16 +31,32 @@ class SortingVC: UIViewController {
     @IBOutlet weak var lvl10BookIcon: UIImageView!
     //var userBook = BookViewCODE()
     
+    let values = [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+    var labelOneNum = 0
+    var labelTwoNum = 0
+    var labelThreeNum = 0
+    var labelFourNum = 0
+    var m = 0.0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newGame()
+        progressInLvl = 0
         
         //view.addSubview(makeBook(x: 0, y: 0, w: 300, h: 40, catagory: "999", author: "WOW"))
         // Do any additional setup after loading the view.
     }
+    @IBAction func resetBtnPressed(_ sender: UIButton)
+    {
+        newGame()
+        progressInLvl = 0
+    }
     
     func newGame()
     {
+        setBins()
         randomCatagory()
         randomAuthor()
         randomBookColor()
@@ -44,17 +65,101 @@ class SortingVC: UIViewController {
     func randomCatagory()
     {
         /* Alex's random catagory algorithm */
-        userBook.catagoryLabel.text = "999"
+        //userBook.catagoryLabel.text = "999"
+        
+        let x = Int.random(in: 1...5)
+        if (x == 1)
+        {
+            userBook.catagoryLabel.text = "F"
+        }
+        else if (x == 2)
+        {
+            userBook.catagoryLabel.text = "B"
+        }
+        else
+        {
+            m = Double.random(in: 100.00...999.99)
+            // if (checkDigit(b: Int(m))){
+            //numberLabel.text = String(m)}
+            while (!checkDigit(b: Int(m)))
+            {
+                m = Double.random(in: 100.00...999.99)
+            }
+            m = Double(round(1000*m)/1000)
+            userBook.catagoryLabel.text = String(m)
+        }
     }
+    
+    func checkDigit(b: Int) -> Bool
+    {
+        print(b)
+        let digit = firstDigit(number: b)
+        print(digit)
+        let oneDigit = firstDigit(number: labelOneNum)
+        let twoDigit = firstDigit(number: labelTwoNum)
+        let thirdDigit = firstDigit(number: labelThreeNum)
+        let fourDigit = firstDigit(number: labelFourNum)
+        
+        if ((digit == oneDigit) || (digit == twoDigit) || (digit == thirdDigit) || (digit == fourDigit))
+        {
+            return true
+        }
+        
+        return false
+    }
+    
+    func firstDigit(number: Int) -> Int
+    {
+        // var p = Int(number/100)
+        // print(p)
+        // return p
+        return Int(number/100)
+    }
+    
+    
     func randomAuthor()
     {
         /* Alex's random author algorithm */
-        userBook.authorLabel.text = "WOW"
+        //userBook.authorLabel.text = "WOW"
+        
+        var name = ""
+        for n in 0...2
+        {
+            name = name + String(alphabet[Int.random(in: 0...25)])
+        }
+        userBook.authorLabel.text = name
+        
     }
     func randomBookColor()
     {
         /* Alex's random color algorithm? */
         userBook.bkgImageView.image = UIImage(named: "blueBook")
+    }
+    
+    func setBins()
+    {
+        labelOneNum = values[Int.random(in: 0...8)]
+        labelTwoNum = values[Int.random(in: 0...8)]
+        labelThreeNum = values[Int.random(in: 0...8)]
+        labelFourNum = values[Int.random(in: 0...8)]
+        
+        while (labelOneNum == labelTwoNum)
+        {
+            labelTwoNum = values[Int.random(in: 0...8)]
+        }
+        while ((labelThreeNum == labelTwoNum) || (labelThreeNum == labelOneNum))
+        {
+            labelThreeNum = values[Int.random(in: 0...8)]
+        }
+        while ((labelFourNum == labelTwoNum) || (labelFourNum == labelOneNum) || (labelFourNum == labelThreeNum))
+        {
+            labelFourNum = values[Int.random(in: 0...8)]
+        }
+        
+        bin1Label.text = String(labelOneNum)
+        bin2Label.text = String(labelTwoNum)
+        bin3Label.text = String(labelThreeNum)
+        bin4Label.text = String(labelFourNum)
     }
     
     func updateProgressBar()
@@ -103,6 +208,19 @@ class SortingVC: UIViewController {
         {
             lvl1BookIcon.image = nil
         }
+    }
+    
+    @IBAction func ficBtnPressed(_ sender: UIButton) {
+    }
+    @IBAction func bioBtnPressed(_ sender: UIButton) {
+    }
+    @IBAction func bin1BtnPressed(_ sender: UIButton) {
+    }
+    @IBAction func bin2BtnPressed(_ sender: UIButton) {
+    }
+    @IBAction func bin3BtnPressed(_ sender: UIButton) {
+    }
+    @IBAction func bin4BtnPressed(_ sender: UIButton) {
     }
     
     /*

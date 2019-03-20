@@ -609,11 +609,76 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BB-Z9-ZpV">
+                                <rect key="frame" x="324" y="276" width="164" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="ficBtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="bDD-dn-6Z6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWZ-6e-deU">
+                                <rect key="frame" x="326" y="529" width="164" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bioBtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="Igy-XW-f02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLM-hQ-edo">
+                                <rect key="frame" x="552" y="529" width="164" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bin3BtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="yIU-bO-WgC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvC-Jn-6U2">
+                                <rect key="frame" x="781" y="529" width="164" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bin4BtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="vUY-JW-cg4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-J5-jue">
+                                <rect key="frame" x="552" y="276" width="164" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bin1BtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="dCM-BW-Kfx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83R-66-Lj1">
+                                <rect key="frame" x="781" y="277" width="164" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bin2BtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="Je5-Jo-R1I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaC-HL-cfQ">
+                                <rect key="frame" x="691" y="40" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="zDo-KX-8MM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKp-nu-bT2">
+                                <rect key="frame" x="921" y="40" width="40" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Ms-FU-LEG"/>
                     </view>
                     <connections>
+                        <outlet property="bin1Label" destination="lzD-cR-Ng5" id="fC6-Am-wAp"/>
+                        <outlet property="bin2Label" destination="Qkp-Qe-WEd" id="psU-cg-hNK"/>
+                        <outlet property="bin3Label" destination="SOe-HY-XCR" id="wC9-Us-GyG"/>
+                        <outlet property="bin4Label" destination="Ajp-fW-4oT" id="ali-zg-pqn"/>
                         <outlet property="lvl10BookIcon" destination="E3F-Bt-0aI" id="IGA-jg-Oef"/>
                         <outlet property="lvl1BookIcon" destination="7ev-c6-Pj0" id="Zfg-W7-lct"/>
                         <outlet property="lvl2BookIcon" destination="mao-4N-wVG" id="HSW-jd-B4o"/>
