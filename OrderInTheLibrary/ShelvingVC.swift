@@ -21,7 +21,11 @@ class ShelvingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userBookView.catagoryLabel.frame.origin = CGPoint(x: 97, y: 303)
+        userBookView.catagoryLabel.frame.size.width = 90
+        userBookView.catagoryLabel.frame.size.height = 30
+        //userBookView.catagoryLabel.
+        userBookView.catagoryLabel.text = "000.000"
         // Do any additional setup after loading the view.
     }
     
