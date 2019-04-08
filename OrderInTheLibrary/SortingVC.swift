@@ -210,18 +210,84 @@ class SortingVC: UIViewController {
         }
     }
     
-    @IBAction func ficBtnPressed(_ sender: UIButton) {
+    @IBAction func ficBtnPressed(_ sender: UIButton)
+    {
+        if userBook.catagoryLabel.text == "F"
+        {
+            progressInLvl = progressInLvl + 1
+            print("YES")
+        }
+        checkIfDone()
     }
-    @IBAction func bioBtnPressed(_ sender: UIButton) {
+    @IBAction func bioBtnPressed(_ sender: UIButton)
+    {
+        if userBook.catagoryLabel.text == "B"
+        {
+            progressInLvl = progressInLvl + 1
+            print("YES")
+        }
+        checkIfDone()
     }
-    @IBAction func bin1BtnPressed(_ sender: UIButton) {
+    @IBAction func bin1BtnPressed(_ sender: UIButton)
+    {
+        if Int(m/100) == labelOneNum/100
+        {
+            progressInLvl = progressInLvl + 1
+            print("YES")
+        }
+        else
+        {
+            wrong()
+        }
+        checkIfDone()
     }
-    @IBAction func bin2BtnPressed(_ sender: UIButton) {
+    @IBAction func bin2BtnPressed(_ sender: UIButton)
+    {
+        if Int(m/100) == labelTwoNum/100
+        {
+            progressInLvl = progressInLvl + 1
+            print("YES")
+        }
+        checkIfDone()
     }
-    @IBAction func bin3BtnPressed(_ sender: UIButton) {
+    @IBAction func bin3BtnPressed(_ sender: UIButton)
+    {
+        if Int(m/100) == labelThreeNum/100
+        {
+            progressInLvl = progressInLvl + 1
+            print("YES")
+        }
+        checkIfDone()
     }
-    @IBAction func bin4BtnPressed(_ sender: UIButton) {
+    @IBAction func bin4BtnPressed(_ sender: UIButton)
+    {
+        if Int(m/100) == labelFourNum/100
+        {
+            progressInLvl = progressInLvl + 1
+            print("YES")
+        }
+        checkIfDone()
     }
+    
+    func checkIfDone()
+    {
+        if lvl10BookIcon.image == UIImage(named: "bookIcon")
+        {
+            //DONE
+        }
+        else
+        {
+            updateProgressBar()
+            newGame()
+        }
+    }
+    
+    func wrong()
+    {
+        
+    }
+    
+    
     
     /*
     // MARK: - Navigation
