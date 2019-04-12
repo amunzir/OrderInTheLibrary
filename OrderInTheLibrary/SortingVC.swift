@@ -53,6 +53,7 @@ class SortingVC: UIViewController {
     @IBAction func resetBtnPressed(_ sender: UIButton)
     {
         newGame()
+        resetProgressBar()
         progressInLvl = 0
         wrongs = 0
     }
@@ -316,11 +317,31 @@ class SortingVC: UIViewController {
     {
         if wrongs == 1
         {
+            print("ONE MISTAKE")
+            
+            // create the alert
+            let alert = UIAlertController(title: "That was wrong!", message: "You made a mistake.", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
             
         }
         else if wrongs == 2
         {
+            print("TWO MISTAKE")
             
+            // create the alert
+            let alert = UIAlertController(title: "Wrong Again!", message: "You have made mistakes.", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "Reset", style: UIAlertAction.Style.default, handler: {action in
+                self.newGame()
+                self.resetProgressBar()
+                self.progressInLvl = 0
+                self.wrongs = 0
+            }))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
