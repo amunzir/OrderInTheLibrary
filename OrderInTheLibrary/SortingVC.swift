@@ -271,13 +271,14 @@ class SortingVC: UIViewController {
     
     func checkIfDone()
     {
+        updateProgressBar()
         if lvl10BookIcon.image == UIImage(named: "bookIcon")
         {
             //DONE
+            print("D O N E")
         }
         else
         {
-            updateProgressBar()
             newGame()
         }
     }
@@ -287,6 +288,20 @@ class SortingVC: UIViewController {
         
     }
     
+    
+    func resetProgressBar()
+    {
+        lvl1BookIcon.image = nil
+        lvl2BookIcon.image = nil
+        lvl3BookIcon.image = nil
+        lvl4BookIcon.image = nil
+        lvl5BookIcon.image = nil
+        lvl6BookIcon.image = nil
+        lvl7BookIcon.image = nil
+        lvl8BookIcon.image = nil
+        lvl9BookIcon.image = nil
+        lvl10BookIcon.image = nil
+    }
     
     
     /*
