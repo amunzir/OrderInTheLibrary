@@ -11,6 +11,7 @@ import UIKit
 class SortingVC: UIViewController {
 
     var progressInLvl = 0
+    var wrongs = 0
     
     @IBOutlet weak var userBook: BookView!
     
@@ -44,6 +45,7 @@ class SortingVC: UIViewController {
         super.viewDidLoad()
         newGame()
         progressInLvl = 0
+        wrongs = 0
         
         //view.addSubview(makeBook(x: 0, y: 0, w: 300, h: 40, catagory: "999", author: "WOW"))
         // Do any additional setup after loading the view.
@@ -52,6 +54,7 @@ class SortingVC: UIViewController {
     {
         newGame()
         progressInLvl = 0
+        wrongs = 0
     }
     
     func newGame()
@@ -217,6 +220,11 @@ class SortingVC: UIViewController {
             progressInLvl = progressInLvl + 1
             print("YES")
         }
+        else
+        {
+            wrongs = wrongs + 1
+            wrong()
+        }
         checkIfDone()
     }
     @IBAction func bioBtnPressed(_ sender: UIButton)
@@ -225,6 +233,11 @@ class SortingVC: UIViewController {
         {
             progressInLvl = progressInLvl + 1
             print("YES")
+        }
+        else
+        {
+            wrongs = wrongs + 1
+            wrong()
         }
         checkIfDone()
     }
@@ -237,6 +250,7 @@ class SortingVC: UIViewController {
         }
         else
         {
+            wrongs = wrongs + 1
             wrong()
         }
         checkIfDone()
@@ -248,6 +262,11 @@ class SortingVC: UIViewController {
             progressInLvl = progressInLvl + 1
             print("YES")
         }
+        else
+        {
+            wrongs = wrongs + 1
+            wrong()
+        }
         checkIfDone()
     }
     @IBAction func bin3BtnPressed(_ sender: UIButton)
@@ -257,6 +276,11 @@ class SortingVC: UIViewController {
             progressInLvl = progressInLvl + 1
             print("YES")
         }
+        else
+        {
+            wrongs = wrongs + 1
+            wrong()
+        }
         checkIfDone()
     }
     @IBAction func bin4BtnPressed(_ sender: UIButton)
@@ -265,6 +289,11 @@ class SortingVC: UIViewController {
         {
             progressInLvl = progressInLvl + 1
             print("YES")
+        }
+        else
+        {
+            wrongs = wrongs + 1
+            wrong()
         }
         checkIfDone()
     }
@@ -285,7 +314,14 @@ class SortingVC: UIViewController {
     
     func wrong()
     {
-        
+        if wrongs == 1
+        {
+            
+        }
+        else if wrongs == 2
+        {
+            
+        }
     }
     
     
