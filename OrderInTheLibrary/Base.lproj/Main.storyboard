@@ -669,6 +669,9 @@
                                 <state key="normal" title="Exit">
                                     <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="exitBtnPressed:" destination="tRX-wM-4ET" eventType="touchUpInside" id="2ah-h2-XhC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -690,6 +693,7 @@
                         <outlet property="lvl8BookIcon" destination="yOA-j2-qAZ" id="nBG-Q2-xVQ"/>
                         <outlet property="lvl9BookIcon" destination="LHv-Vc-Gpv" id="2oQ-re-NRF"/>
                         <outlet property="userBook" destination="y14-fq-wt6" id="g8R-qk-eBG"/>
+                        <segue destination="er9-o8-mqi" kind="show" identifier="sortToLvlsSegue" id="15c-cS-uQL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKS-Zq-CrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -803,6 +807,7 @@
         <image name="sixBookShelfTop" width="5500" height="3000"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="15c-cS-uQL"/>
         <segue reference="tKY-za-IyX"/>
     </inferredMetricsTieBreakers>
 </document>

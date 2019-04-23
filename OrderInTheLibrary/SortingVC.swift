@@ -306,6 +306,18 @@ class SortingVC: UIViewController {
         {
             //DONE
             print("D O N E")
+            
+            
+            // create the alert
+            let alert = UIAlertController(title: "Congrats!", message: "You finished the level", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: {action in
+                lvl1Done = true
+                self.performSegue(withIdentifier: "sortToLvlsSegue", sender: nil)
+                
+            }))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
         else
         {
@@ -358,6 +370,12 @@ class SortingVC: UIViewController {
         lvl8BookIcon.image = nil
         lvl9BookIcon.image = nil
         lvl10BookIcon.image = nil
+    }
+    
+    
+    @IBAction func exitBtnPressed(_ sender: UIButton)
+    {
+        performSegue(withIdentifier: "sortToLvlsSegue", sender: nil)
     }
     
     
