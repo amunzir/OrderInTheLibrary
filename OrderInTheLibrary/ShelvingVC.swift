@@ -23,19 +23,7 @@ class ShelvingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setBooksFirst()
-        /*
-        userBookView.catagoryLabel.frame.origin = CGPoint(x: 97, y: 303)
-        userBookView.catagoryLabel.frame.size.width = 90
-        userBookView.catagoryLabel.frame.size.height = 30
-        userBookView.catagoryLabel.font = UIFont.systemFont(ofSize: 20.0)
-        userBookView.catagoryLabel.text = "000.000"
         
-        userBookView.authorLabel.frame.origin = CGPoint(x: 97, y: 333)
-        userBookView.authorLabel.frame.size.width = 90
-        userBookView.authorLabel.frame.size.height = 30
-        userBookView.authorLabel.font = UIFont.systemFont(ofSize: 20.0)
-        userBookView.authorLabel.text = "MMM"
-        */
         
         // Do any additional setup after loading the view.
     }
