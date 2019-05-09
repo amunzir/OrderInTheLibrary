@@ -16,7 +16,7 @@ class ShelvingVC: UIViewController {
     @IBOutlet weak var fourthBookView: BookView!
     @IBOutlet weak var fifthBookView: BookView!
     
-    @IBOutlet weak var userBookView: BookView!
+    @IBOutlet weak var sixthBookView: BookView!
     
     
     
@@ -42,7 +42,7 @@ class ShelvingVC: UIViewController {
     
     func setBooksFirst()
     {
-        var books = [firstBookView, secondBookView, thirdBookView, fourthBookView, fifthBookView, userBookView]
+        var books = [firstBookView, secondBookView, thirdBookView, fourthBookView, fifthBookView, sixthBookView]
         for book in books
         {
             book!.catagoryLabel.frame.origin = CGPoint(x: 97, y: 303)

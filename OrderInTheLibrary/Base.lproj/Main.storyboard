@@ -720,48 +720,48 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sixBookShelfBottom" translatesAutoresizingMaskIntoConstraints="NO" id="QVM-uO-nGY">
-                                <rect key="frame" x="217" y="199" width="957" height="442"/>
+                                <rect key="frame" x="132" y="248" width="957" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-8B-wvr" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
-                                <rect key="frame" x="859" y="154" width="200" height="430"/>
+                                <rect key="frame" x="774" y="203" width="200" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ky9-3b-UP8" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
-                                <rect key="frame" x="754" y="154" width="200" height="430"/>
+                                <rect key="frame" x="669" y="203" width="200" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ns-ah-njh" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
-                                <rect key="frame" x="649" y="154" width="200" height="430"/>
+                                <rect key="frame" x="564" y="203" width="200" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTn-ak-WGo" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
-                                <rect key="frame" x="544" y="154" width="200" height="430"/>
+                                <rect key="frame" x="459" y="203" width="200" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLi-rQ-6AT" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
-                                <rect key="frame" x="440" y="154" width="200" height="430"/>
+                                <rect key="frame" x="355" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-LJ-fyv" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="251" y="203" width="200" height="430"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sixBookShelfTop" translatesAutoresizingMaskIntoConstraints="NO" id="Cjb-fl-vBm">
-                                <rect key="frame" x="36" y="96" width="1211" height="521"/>
+                                <rect key="frame" x="-49" y="145" width="1211" height="521"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-LJ-fyv" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
-                                <rect key="frame" x="53" y="268" width="200" height="430"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dil-wg-Ve3"/>
                     </view>
                     <connections>
-                        <outlet property="fifthBookView" destination="NmW-8B-wvr" id="IsY-vq-6cp"/>
-                        <outlet property="firstBookView" destination="cLi-rQ-6AT" id="lit-kz-QXn"/>
-                        <outlet property="fourthBookView" destination="Ky9-3b-UP8" id="8yE-G8-xxG"/>
-                        <outlet property="secondBookView" destination="kTn-ak-WGo" id="s4D-fL-zNd"/>
-                        <outlet property="thirdBookView" destination="4Ns-ah-njh" id="U0p-bI-aQO"/>
-                        <outlet property="userBookView" destination="Bu8-LJ-fyv" id="ALX-Rf-ncs"/>
+                        <outlet property="fifthBookView" destination="Ky9-3b-UP8" id="JLy-uM-gYm"/>
+                        <outlet property="firstBookView" destination="Bu8-LJ-fyv" id="qyl-UR-gFD"/>
+                        <outlet property="fourthBookView" destination="4Ns-ah-njh" id="5MH-no-YL0"/>
+                        <outlet property="secondBookView" destination="cLi-rQ-6AT" id="uEw-FY-Lyk"/>
+                        <outlet property="sixthBookView" destination="NmW-8B-wvr" id="B6x-cK-ja7"/>
+                        <outlet property="thirdBookView" destination="kTn-ak-WGo" id="kxK-YW-XqL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjU-7z-Fpt" userLabel="First Responder" sceneMemberID="firstResponder"/>
