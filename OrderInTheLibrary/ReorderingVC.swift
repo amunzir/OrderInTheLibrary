@@ -90,7 +90,7 @@ class ReorderingVC: UIViewController {
                     return false
                 }
             }
-            if (m != 6)
+            if (m != 5)
             {
                 if numArray[m] > numArray[m+1]
                 {
@@ -99,6 +99,19 @@ class ReorderingVC: UIViewController {
             }
         }
         return true
+    }
+    
+    
+    @IBAction func checkBtnPressed(_ sender: UIButton)
+    {
+        if numberCheck()
+        {
+            print("correct!")
+        }
+        else
+        {
+            print("incorrect!")
+        }
     }
     
     

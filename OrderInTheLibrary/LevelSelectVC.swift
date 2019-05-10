@@ -89,9 +89,11 @@ class LevelSelectVC: UIViewController {
         performSegue(withIdentifier: "sortingSegue", sender: nil)
     }
     @IBAction func shelvingBtnPressed(_ sender: UIButton) {
+        currentLvl = 2
         performSegue(withIdentifier: "shelvingSegue", sender: nil)
     }
     @IBAction func reorderingBtnPressed(_ sender: UIButton) {
+        currentLvl = 3
         performSegue(withIdentifier: "reorderSegue", sender: nil)
     }
     
