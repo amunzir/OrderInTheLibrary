@@ -24,14 +24,10 @@ class LevelSelectVC: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBOutlet weak var shelvingView: UIView!
-    @IBOutlet weak var reorderView: UIView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        shelvingView.isHidden = true
-        reorderView.isHidden = true
+        
         nameLabel.text = firstName + " " + lastName
         checkLvlComp()
 
@@ -93,62 +89,13 @@ class LevelSelectVC: UIViewController {
         performSegue(withIdentifier: "sortingSegue", sender: nil)
     }
     @IBAction func shelvingBtnPressed(_ sender: UIButton) {
-        shelvingView.isHidden = false
+        performSegue(withIdentifier: "shelvingSegue", sender: nil)
     }
     @IBAction func reorderingBtnPressed(_ sender: UIButton) {
-        reorderView.isHidden = false
-    }
-    
-    
-    @IBAction func lvl2Pressed(_ sender: UIButton) {
-        currentLvl = 2
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func lvl3Pressed(_ sender: UIButton) {
-        currentLvl = 3
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func lvl4Pressed(_ sender: UIButton) {
-        currentLvl = 4
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func lvl5Pressed(_ sender: UIButton) {
-        currentLvl = 5
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func lvl6Pressed(_ sender: UIButton) {
-        currentLvl = 6
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func lvl7Pressed(_ sender: UIButton) {
-        currentLvl = 7
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func lvl8Pressed(_ sender: UIButton) {
-        currentLvl = 8
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
-    }
-    @IBAction func shelfOUTPressed(_ sender: UIButton) {
-        shelvingView.isHidden = true
-    }
-    
-    
-    @IBAction func lvl9Pressed(_ sender: UIButton) {
-        currentLvl = 9
         performSegue(withIdentifier: "reorderSegue", sender: nil)
     }
-    @IBAction func lvl10Pressed(_ sender: UIButton) {
-        currentLvl = 10
-        performSegue(withIdentifier: "reorderSegue", sender: nil)
-    }
-    @IBAction func lvl11Pressed(_ sender: UIButton) {
-        currentLvl = 11
-        performSegue(withIdentifier: "reorderSegue", sender: nil)
-    }
-    @IBAction func reorderOUTPressed(_ sender: UIButton) {
-        reorderView.isHidden = true
-    }
     
+   
     
     /*
     // MARK: - Navigation

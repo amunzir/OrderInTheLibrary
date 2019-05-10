@@ -240,159 +240,6 @@
                                     <action selector="reorderingBtnPressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="3Ch-Vc-hGq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I38-aN-U01">
-                                <rect key="frame" x="182" y="92" width="748" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23p-tg-aPP">
-                                        <rect key="frame" x="142" y="177" width="179" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="EXPERT"/>
-                                        <connections>
-                                            <action selector="lvl2Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="5fV-aZ-6Oi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL5-Su-gLg">
-                                        <rect key="frame" x="142" y="359" width="179" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="GENIUS"/>
-                                        <connections>
-                                            <action selector="lvl4Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="r7l-NE-6fL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-wx-HZe">
-                                        <rect key="frame" x="142" y="268" width="179" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="MASTER"/>
-                                        <connections>
-                                            <action selector="lvl3Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="vLt-RI-yjb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-Ph-qs3">
-                                        <rect key="frame" x="427" y="177" width="179" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="EXPERT"/>
-                                        <connections>
-                                            <action selector="lvl5Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="I3Y-EC-ZXi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2y-ac-Z9Q">
-                                        <rect key="frame" x="427" y="359" width="179" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="GENIUS"/>
-                                        <connections>
-                                            <action selector="lvl7Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="BCi-mZ-TcH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akm-Oj-l9j">
-                                        <rect key="frame" x="238" y="486" width="273" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="SUPER GENIUS"/>
-                                        <connections>
-                                            <action selector="lvl8Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="7Hi-Nf-Vs8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elK-6G-y9a">
-                                        <rect key="frame" x="427" y="268" width="179" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="MASTER"/>
-                                        <connections>
-                                            <action selector="lvl6Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="SSu-Vj-FMF"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shelving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDK-E1-KI8">
-                                        <rect key="frame" x="227" y="8" width="295" height="97"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alphabetical" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkg-gt-jhY">
-                                        <rect key="frame" x="161" y="128" width="141" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dewey Decimal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-lN-b1V">
-                                        <rect key="frame" x="433" y="128" width="168" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-Yy-hXh">
-                                        <rect key="frame" x="680" y="8" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="X"/>
-                                        <connections>
-                                            <action selector="shelfOUTPressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="9Tz-91-URi"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kve-Ab-G4a">
-                                <rect key="frame" x="182" y="92" width="748" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zr-AT-OkK">
-                                        <rect key="frame" x="152" y="177" width="445" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="ALPHABET REORDERING"/>
-                                        <connections>
-                                            <action selector="lvl2Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="mev-ed-cR8"/>
-                                            <action selector="lvl9Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="uuH-bK-HT2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-0z-6Ln">
-                                        <rect key="frame" x="130" y="359" width="490" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="MASTER OF THE UNIVERSE"/>
-                                        <connections>
-                                            <action selector="lvl10Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="n1E-CL-5Qc"/>
-                                            <action selector="lvl4Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="Bmp-eA-V1t"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFb-Nh-3RB">
-                                        <rect key="frame" x="94" y="268" width="561" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="DEWEY DECIMAL REORDERING"/>
-                                        <connections>
-                                            <action selector="lvl11Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="qZ1-1a-O5l"/>
-                                            <action selector="lvl3Pressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="p89-It-Djn"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reordering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7F-Oe-kdk">
-                                        <rect key="frame" x="191" y="32" width="367" height="97"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLW-HW-CtT">
-                                        <rect key="frame" x="680" y="8" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="X"/>
-                                        <connections>
-                                            <action selector="reorderOUTPressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="nLw-Ub-2tD"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aTr-ga-GWL"/>
@@ -410,8 +257,6 @@
                         <outlet property="lvl8Image" destination="L1H-uD-nHL" id="2Ht-Y4-j3Y"/>
                         <outlet property="lvl9Image" destination="VmN-ot-2Ut" id="cA5-A5-sfC"/>
                         <outlet property="nameLabel" destination="LBR-Vu-NLS" id="IYz-pT-EZw"/>
-                        <outlet property="reorderView" destination="kve-Ab-G4a" id="6wQ-UO-eGM"/>
-                        <outlet property="shelvingView" destination="I38-aN-U01" id="6g1-5f-Jvp"/>
                         <segue destination="tRX-wM-4ET" kind="show" identifier="sortingSegue" id="VAJ-t1-oDq"/>
                         <segue destination="IfG-fx-fgW" kind="show" identifier="shelvingSegue" id="MPB-0J-LBs"/>
                         <segue destination="zRk-PJ-MF8" kind="show" identifier="reorderSegue" id="0M2-bd-6EC"/>
@@ -780,8 +625,40 @@
                                 <rect key="frame" x="20" y="20" width="1072" height="794"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sixBookShelfBottom" translatesAutoresizingMaskIntoConstraints="NO" id="235-ov-A81">
+                                <rect key="frame" x="132" y="248" width="957" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lva-49-HA8" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="774" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9UF-XT-bfj" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="669" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RtT-HK-aRs" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="564" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-bc-LYx" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="459" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMp-2f-0kv" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="355" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-hm-Vmz" customClass="BookView" customModule="OrderInTheLibrary" customModuleProvider="target">
+                                <rect key="frame" x="251" y="203" width="200" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sixBookShelfTop" translatesAutoresizingMaskIntoConstraints="NO" id="rNN-rU-PoW">
+                                <rect key="frame" x="-49" y="145" width="1211" height="521"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REORDERING" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-0j-cX9">
-                                <rect key="frame" x="350" y="290" width="413" height="254"/>
+                                <rect key="frame" x="20" y="20" width="193" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -791,10 +668,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oKd-6Y-Njf"/>
                     </view>
+                    <connections>
+                        <outlet property="fifthBookView" destination="9UF-XT-bfj" id="PIN-Os-1bI"/>
+                        <outlet property="firstBookView" destination="O4b-hm-Vmz" id="vzK-Xx-5bf"/>
+                        <outlet property="fourthBookView" destination="RtT-HK-aRs" id="t0N-KD-4fy"/>
+                        <outlet property="secondBookView" destination="BMp-2f-0kv" id="ce1-S4-ahS"/>
+                        <outlet property="sixthBookView" destination="lva-49-HA8" id="yiM-6b-LL0"/>
+                        <outlet property="thirdBookView" destination="0yB-bc-LYx" id="HRP-cR-qDO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khI-vd-UTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2436" y="736"/>
+            <point key="canvasLocation" x="2435.611510791367" y="735.97122302158277"/>
         </scene>
     </scenes>
     <resources>
