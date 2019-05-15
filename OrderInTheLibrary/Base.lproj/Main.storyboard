@@ -673,52 +673,64 @@
                                     <action selector="checkBtnPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="zsu-cN-WYN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4L-Mu-4JA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4L-Mu-4JA">
                                 <rect key="frame" x="251" y="324" width="190" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="firstBookPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="hOW-co-JfF"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-MT-NO1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-MT-NO1">
                                 <rect key="frame" x="442" y="324" width="100" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secondBookPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="Cvv-Kw-IZZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vZ-Rv-v6Z">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vZ-Rv-v6Z">
                                 <rect key="frame" x="546" y="324" width="100" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="thirdBookPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="uXF-jc-eOV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gL-Qo-90f">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gL-Qo-90f">
                                 <rect key="frame" x="652" y="324" width="100" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fourthBookPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="Y7Q-sr-Er9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqf-cM-mVM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqf-cM-mVM">
                                 <rect key="frame" x="757" y="324" width="100" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fifthBookPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="3bB-4I-BRZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-gc-bRk">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-gc-bRk">
                                 <rect key="frame" x="863" y="324" width="100" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.86274509799999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sixthBookPressed:" destination="zRk-PJ-MF8" eventType="touchUpInside" id="gI4-pt-erO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oKd-6Y-Njf"/>
                     </view>
                     <connections>
+                        <outlet property="fifthBookBtn" destination="Vqf-cM-mVM" id="WLL-8f-PAO"/>
                         <outlet property="fifthBookView" destination="9UF-XT-bfj" id="PIN-Os-1bI"/>
+                        <outlet property="firstBookBtn" destination="Z4L-Mu-4JA" id="d2X-gx-wWg"/>
                         <outlet property="firstBookView" destination="O4b-hm-Vmz" id="vzK-Xx-5bf"/>
+                        <outlet property="fourthBookBtn" destination="1gL-Qo-90f" id="IrF-R8-Nwp"/>
                         <outlet property="fourthBookView" destination="RtT-HK-aRs" id="t0N-KD-4fy"/>
+                        <outlet property="secondBookBtn" destination="bhf-MT-NO1" id="NVy-wc-aDz"/>
                         <outlet property="secondBookView" destination="BMp-2f-0kv" id="ce1-S4-ahS"/>
+                        <outlet property="sixthBookBtn" destination="CZS-gc-bRk" id="aFW-KE-BsS"/>
                         <outlet property="sixthBookView" destination="lva-49-HA8" id="yiM-6b-LL0"/>
+                        <outlet property="thirdBookBtn" destination="2vZ-Rv-v6Z" id="M4d-eb-A2J"/>
                         <outlet property="thirdBookView" destination="0yB-bc-LYx" id="HRP-cR-qDO"/>
                     </connections>
                 </viewController>
