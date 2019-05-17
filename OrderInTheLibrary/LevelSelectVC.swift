@@ -13,14 +13,6 @@ class LevelSelectVC: UIViewController {
     @IBOutlet weak var lvl1Image: UIImageView!
     @IBOutlet weak var lvl2Image: UIImageView!
     @IBOutlet weak var lvl3Image: UIImageView!
-    @IBOutlet weak var lvl4Image: UIImageView!
-    @IBOutlet weak var lvl5Image: UIImageView!
-    @IBOutlet weak var lvl6Image: UIImageView!
-    @IBOutlet weak var lvl7Image: UIImageView!
-    @IBOutlet weak var lvl8Image: UIImageView!
-    @IBOutlet weak var lvl9Image: UIImageView!
-    @IBOutlet weak var lvl10Image: UIImageView!
-    @IBOutlet weak var lvl11Image: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -48,38 +40,7 @@ class LevelSelectVC: UIViewController {
         {
             lvl3Image.image = UIImage(named: "ok")
         }
-        if lvl4Done
-        {
-            lvl4Image.image = UIImage(named: "ok")
-        }
-        if lvl5Done
-        {
-            lvl5Image.image = UIImage(named: "ok")
-        }
-        if lvl6Done
-        {
-            lvl6Image.image = UIImage(named: "ok")
-        }
-        if lvl7Done
-        {
-            lvl7Image.image = UIImage(named: "ok")
-        }
-        if lvl8Done
-        {
-            lvl8Image.image = UIImage(named: "ok")
-        }
-        if lvl9Done
-        {
-            lvl9Image.image = UIImage(named: "ok")
-        }
-        if lvl10Done
-        {
-            lvl10Image.image = UIImage(named: "ok")
-        }
-        if lvl11Done
-        {
-            lvl11Image.image = UIImage(named: "ok")
-        }
+        
     }
     
     
@@ -89,8 +50,14 @@ class LevelSelectVC: UIViewController {
         performSegue(withIdentifier: "sortingSegue", sender: nil)
     }
     @IBAction func shelvingBtnPressed(_ sender: UIButton) {
-        currentLvl = 2
-        performSegue(withIdentifier: "shelvingSegue", sender: nil)
+        //currentLvl = 2
+        //performSegue(withIdentifier: "shelvingSegue", sender: nil)
+        // create the alert
+        let alert = UIAlertController(title: "Sorry!", message: "This level is unavailable at the moment", preferredStyle: UIAlertController.Style.alert)
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
     @IBAction func reorderingBtnPressed(_ sender: UIButton) {
         currentLvl = 3

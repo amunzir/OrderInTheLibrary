@@ -33,6 +33,7 @@ class SortingVC: UIViewController {
     //var userBook = BookViewCODE()
     
     let values = [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    let colors = ["blueBook", "greenBook", "greyBook", "orangeBook", "pinkBook", "purpleBook", "yellowBook"]
     let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     var labelOneNum = 0
     var labelTwoNum = 0
@@ -137,7 +138,7 @@ class SortingVC: UIViewController {
     func randomBookColor()
     {
         /* Alex's random color algorithm? */
-        userBook.bkgImageView.image = UIImage(named: "blueBook")
+        userBook.bkgImageView.image = UIImage(named: colors[Int.random(in: 0...6)])
     }
     
     func setBins()

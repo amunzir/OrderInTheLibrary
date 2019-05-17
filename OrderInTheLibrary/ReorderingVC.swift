@@ -25,6 +25,7 @@ class ReorderingVC: UIViewController {
     @IBOutlet weak var sixthBookBtn: UIButton!
     
     var books = [BookView]()
+    let colors = ["blueBook", "greenBook", "greyBook", "orangeBook", "pinkBook", "purpleBook", "yellowBook"]
     
     var num1 = 0.00
     var num2 = 0.00
@@ -39,6 +40,8 @@ class ReorderingVC: UIViewController {
     
     var clickedIndex = -1
     var firstBookHasBeenClicked = false
+    
+    var numOfDone = 0
     
     
     override func viewDidLoad() {
@@ -73,6 +76,7 @@ class ReorderingVC: UIViewController {
                 name = name + String(alphabet[Int.random(in: 0...25)])
             }
             book.authorLabel.text = name
+            book.bkgImageView.image = UIImage(named: colors[Int.random(in: 0...6)])
         }
     }
     
@@ -118,13 +122,44 @@ class ReorderingVC: UIViewController {
     
     @IBAction func checkBtnPressed(_ sender: UIButton)
     {
-        if numberCheck()
+        if numberCheck() && numOfDone == 1
         {
             print("correct!")
+            // create the alert
+            let alert = UIAlertController(title: "Congrats!", message: "You finished the level", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: {action in
+                lvl3Done = true
+                self.performSegue(withIdentifier: "reorderToLvlSelect", sender: nil)
+                
+            }))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if numberCheck() && numOfDone == 0
+        {
+            print("correct!")
+            // create the alert
+            let alert = UIAlertController(title: "Nice!", message: nil, preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "Next Set", style: UIAlertAction.Style.default, handler: {action in
+                self.reset()
+                self.numOfDone = 1
+            }))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
         else
         {
             print("incorrect!")
+            // create the alert
+            let alert = UIAlertController(title: "Wrong!", message: "You have made a mistake.", preferredStyle: UIAlertController.Style.alert)
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "Reset", style: UIAlertAction.Style.default, handler: {action in
+                self.reset()
+            }))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -234,8 +269,21 @@ class ReorderingVC: UIViewController {
         numArray[secondBookIndex] = tempNum
     }
     
+    func reset()
+    {
+        setBooksFirst()
+        numberArray()
+    }
     
+    @IBAction func resetBtnClicked(_ sender: UIButton)
+    {
+        reset()
+    }
     
+    @IBAction func exitBtnPressed(_ sender: UIButton)
+    {
+        performSegue(withIdentifier: "reorderToLvlSelect", sender: nil)
+    }
     
     
     /*
