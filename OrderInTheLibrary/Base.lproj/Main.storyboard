@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.55993893893053581" green="0.74081331503749137" blue="0.97242432167082271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5607843137254902" green="0.74117647058823533" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -116,51 +116,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf5-ib-XDA">
-                                <rect key="frame" x="113" y="66" width="300" height="300"/>
+                                <rect key="frame" x="113" y="66" width="420" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Sorting"/>
+                                <state key="normal" backgroundImage="sortingBtnBkg"/>
                                 <connections>
                                     <action selector="sortingBtnPressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="zNI-Tm-ezL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzU-X3-xtD">
-                                <rect key="frame" x="368" y="321" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xX-Yb-9hZ">
-                                <rect key="frame" x="368" y="716" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9Y-xK-glJ">
-                                <rect key="frame" x="113" y="461" width="300" height="300"/>
+                                <rect key="frame" x="113" y="461" width="420" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Shelving"/>
+                                <state key="normal" backgroundImage="fictionBtnBkg"/>
                                 <connections>
                                     <action selector="shelvingBtnPressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="GOv-ES-lzk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zs-YD-gEj">
-                                <rect key="frame" x="629" y="461" width="300" height="300"/>
+                                <rect key="frame" x="629" y="461" width="420" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Reordering"/>
+                                <state key="normal" backgroundImage="deweyBtnBkg"/>
                                 <connections>
                                     <action selector="reorderingBtnPressed:" destination="er9-o8-mqi" eventType="touchUpInside" id="3Ch-Vc-hGq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42U-k2-b73">
-                                <rect key="frame" x="884" y="716" width="45" height="45"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzU-X3-xtD">
+                                <rect key="frame" x="488" y="321" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[name]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBR-Vu-NLS">
-                                <rect key="frame" x="497" y="66" width="565" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xX-Yb-9hZ">
+                                <rect key="frame" x="488" y="716" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[name]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBR-Vu-NLS">
+                                <rect key="frame" x="629" y="66" width="420" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42U-k2-b73">
+                                <rect key="frame" x="1004" y="716" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aTr-ga-GWL"/>
@@ -674,14 +674,16 @@
     <resources>
         <image name="OitL name bkgd" width="3500" height="2500"/>
         <image name="OitL start menu" width="3500" height="2500"/>
+        <image name="deweyBtnBkg" width="3500" height="2500"/>
+        <image name="fictionBtnBkg" width="3500" height="2500"/>
         <image name="lightBlue" width="300" height="224"/>
         <image name="progressBar" width="3500" height="500"/>
         <image name="shelvesWithBins" width="3500" height="1625"/>
         <image name="sixBookShelfBottom" width="5500" height="2500"/>
         <image name="sixBookShelfTop" width="5500" height="3000"/>
+        <image name="sortingBtnBkg" width="3500" height="2500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0M2-bd-6EC"/>
         <segue reference="RFi-Al-Ubq"/>
         <segue reference="tKY-za-IyX"/>
     </inferredMetricsTieBreakers>
