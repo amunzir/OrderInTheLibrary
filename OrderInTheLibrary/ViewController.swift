@@ -24,6 +24,26 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func howTOBtnPressed(_ sender: UIButton)
+    {
+        performSegue(withIdentifier: "toHowToSegue", sender: nil)
+        
+        /*let alert = UIAlertController(title: "Sorry!", message: "This is unavailable at the moment", preferredStyle: UIAlertController.Style.alert)
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)*/
+    }
+    @IBAction func creditsBtnPressed(_ sender: UIButton)
+    {
+        performSegue(withIdentifier: "toCreditsSegue", sender: nil)
+        
+        /*let alert = UIAlertController(title: "Sorry!", message: "This is unavailable at the moment", preferredStyle: UIAlertController.Style.alert)
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)*/
+    }
+    
 }
 
